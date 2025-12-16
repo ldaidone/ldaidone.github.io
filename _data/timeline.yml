@@ -8,7 +8,7 @@ timeline:
   - date: "May 2019 - Present"
     title: "Staff/Senior Software Engineer: Architecture & Modernization"
     company: "Sisu media Inc."
-    description: "Led the architectural transition from a legacy **PHP monolith** to a highly-available microservices platform in **Go (Golang)** on AWS. This project included engineering a CI/CD pipeline that **reduced deployment time by 95%** and achieving a **10% improvement in core query speeds**."
+    description: "Led the architectural transition from a legacy <strong>PHP monolith</strong> to a highly-available microservices platform in <strong>Go (Golang)</strong> on AWS. This project included engineering a CI/CD pipeline that <strong>reduced deployment time by 95%</strong> and achieving a <strong>10% improvement in core query speeds</strong>."
     image: "rocket.jpg"
     icon: "cogs" # Icono opcional
 
@@ -16,7 +16,7 @@ timeline:
   - date: "Jan 2015 - May 2019"
     title: "Senior Software Developer: PHP Systems Architect"
     company: "ArroyoLabs Inc."
-    description: "Architectural contributor to the **Erdiko PHP micro-framework** and a key developer on the **Laravel/SOAP API** for CTM. Automated the processing of **Magento order feeds** via PHP/Bash, **reducing processing time by 95%** and ensuring data accuracy for e-commerce operations."
+    description: "Architectural contributor to the <strong>Erdiko PHP micro-framework</strong> and a key developer on the <strong>Laravel/SOAP API</strong> for CTM. Automated the processing of <strong>Magento order feeds</strong> via PHP/Bash, <strong>reducing processing time by 95%</strong> and ensuring data accuracy for e-commerce operations."
     image: "architecture.jpg"
     icon: "server"
 
@@ -24,7 +24,7 @@ timeline:
   - date: "2011 - 2014 (Foundational)"
     title: "Full-Stack & Diverse Backend Roles"
     company: "Summa, U&R, C. Austral"
-    description: "Developed and launched the Freight Connections MVP (**PHP/CodeIgniter**), engineered the **Cloud Experience (CakePHP)** web interface, and contributed to **Ruby on Rails** applications. Built a strong foundation in diverse backend and full-stack environments."
+    description: "Developed and launched the Freight Connections MVP (<strong>PHP/CodeIgniter</strong>), engineered the <strong>Cloud Experience (CakePHP)</strong> web interface, and contributed to <strong>Ruby on Rails</strong> applications. Built a strong foundation in diverse backend and full-stack environments."
     image: "code-icon.jpg"
     icon: "code"
 
@@ -32,6 +32,6 @@ timeline:
   - date: "Mar 2005 - Dec 2010"
     title: "Development Lead: National Systems Architect"
     company: "SINTYS"
-    description: "Led the design of national-scale systems (Civil Registry Digitalization, **15-20 million** records) and integrated **8 Property Registries** via **SOAP Web Services**. This work **reduced data latency by 98%**, demonstrating an early capacity for high-impact, wide-scale system design."
+    description: "Led the design of national-scale systems (Civil Registry Digitalization, <strong>15-20 million</strong> records) and integrated <strong>8 Property Registries</strong> via <strong>SOAP Web Services</strong>. This work **reduced data latency by 98%**, demonstrating an early capacity for high-impact, wide-scale system design."
     image: "network.jpg"
     icon: "users"

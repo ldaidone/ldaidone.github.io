@@ -7,11 +7,11 @@ services_subheading: "Driving High-Scale Modernization and Engineering Excellenc
 services:
   - title: "Systems Architecture (Go & AWS)"
     icon: "fa-server" # Icono de Servidor o Nube
-    text: "Lead the design and implementation of highly-available, cost-optimized systems using domain-driven design (DDD) principles. Deep expertise in **Go (Golang)** for high-concurrency, low-latency microservices, leveraging **AWS** services (ECS, Lambda, SQS/SNS) to meet complex scaling requirements."
+    text: "Lead the design and implementation of highly-available, cost-optimized systems using domain-driven design (DDD) principles. Deep expertise in <strong>Go (Golang)</strong> for high-concurrency, low-latency microservices, leveraging <strong>AWS</strong> services (ECS, Lambda, SQS/SNS) to meet complex scaling requirements."
 
   - title: "Performance & Modernization"
     icon: "fa-cogs" # Icono de Engranajes/Procesos
-    text: "Specialized in migrating legacy PHP/Java monoliths to agile, cloud-native architectures. Successfully led CI/CD automation initiatives resulting in a **95% reduction in deployment time** and significant infrastructure cost savings through optimization and cloud resource tailoring."
+    text: "Specialized in migrating legacy PHP/Java monoliths to agile, cloud-native architectures. Successfully led CI/CD automation initiatives resulting in a <strong>95% reduction in deployment time</strong> and significant infrastructure cost savings through optimization and cloud resource tailoring."
 
   - title: "Technical Leadership & Mentoring"
     icon: "fa-users" # Icono de Equipo/Liderazgo

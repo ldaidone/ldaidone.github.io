@@ -3,7 +3,7 @@ color:
   primary: fed136
   secondary: fec503   
   secondary-dark: fff
-  muted: 777
+  muted: b4bcc2
 
 # Font Families
 font:

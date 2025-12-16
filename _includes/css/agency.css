@@ -1020,6 +1020,10 @@ ul.social-buttons li a:active {
     transform: rotate(90deg);
 }
 
+.modal {
+    color: black !important;
+}
+
 ::-moz-selection {
     text-shadow: none;
     background: #{{ site.data.template.color.primary }};
@@ -1040,4 +1044,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.alert-success {
+    background-color: green !important;
 }
