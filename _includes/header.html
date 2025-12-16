@@ -1,0 +1,91 @@
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top liquid-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div style="display: none">
+            <!--This is the map, it's an image of HOW we want to displace the pixels-->
+            <svg id="lens-map">
+                <!-- These gradients will define the displacement directions -->
+                <linearGradient id="red">
+                    <!--Some gradient here-->
+                </linearGradient>
+                <linearGradient id="blue">
+                    <!--Some gradient here-->
+                </linearGradient>
+            </svg>
+
+            <!-- This filter uses the pixel colors of the map image to distort the content -->
+            <svg>
+                <defs>
+                    <filter id="my-filter" color-interpolation-filters="sRGB">
+                        <!-- feImage loads the gradient-based displacement map -->
+                        <feImage href="#lens-map" result="map" />
+                        <!-- feDisplacementMap shifts pixels of SourceGraphic (what we want to distort)
+                         based on (R)ed (x) and (B)lue (y) pixel values of the map -->
+                        <feDisplacementMap in="SourceGraphic" in2="map" scale="50" xChannelSelector="R" yChannelSelector="B" result="displaced" />
+                    </filter>
+                </defs>
+            </svg>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden liquid-pill">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="liquid-pill">
+                        <a class="page-scroll" href="#services">Expertise</a>
+                    </li>
+                    <li class="liquid-pill">
+                        <a class="page-scroll" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="liquid-pill">
+                        <a class="page-scroll" href="#about">Timeline</a>
+                    </li>
+                    <li class="liquid-pill">
+                        <a class="page-scroll" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="liquid-pill">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="video-background">
+                <video autoplay muted loop playsinline poster="{{ site.baseurl }}/img/header-bg.png">
+                    <source src="{{ site.baseurl }}/img/header-bg.mp4" type="video/mp4">
+                    <!-- Fallback text for browsers that do not support the video tag -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="intro-text">
+                <div class="intro-lead-in">Leonardo Daidone</div>
+                <div class="intro-heading">Senior/Staff Software Engineer | Systems & DevOps Architect</div>
+                <a href="#services" class="page-scroll btn btn-xl">Discover More</a>
+            </div>
+        </div>
+    </header>
+<!--
+        {% for page in site.pages %}
+          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+        {% endfor %}
+ -->
+

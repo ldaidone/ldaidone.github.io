@@ -1,0 +1,24 @@
+url: https://ldaidone.github.io
+baseurl: /agency-jekyll-theme/
+
+# Site settings
+title: Leo Daidone
+email: leo.daidone@gmail.com
+description: "Staff Software Engineer | Systems & DevOps Architect with 15+ years of experience in high-scale web platforms. Expert in leading legacy system modernization from PHP/Java monoliths to highly available, cost-optimized microservices in Go (Golang), orchestrated via AWS ECS/Lambda. Proven track record in CI/CD automation (95% reduction in deployment time), performance optimization, and fostering technical excellence in global, multidisciplinary teams."
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: http://linkedin.com/in/leodaidone
+  - title: github
+    url: http://github.com/ldaidone
+  - title: twitter
+    url: http://x.com/leodaido
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Banfield (1828), Buenos Aires, Argentina
+
+# Build settings
+markdown: kramdown
+permalink: pretty

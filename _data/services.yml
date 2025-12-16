@@ -1,0 +1,18 @@
+# _data/services.yml
+
+# --- Section Header ---
+services_heading: "Technical Expertise & Core Offering"
+services_subheading: "Driving High-Scale Modernization and Engineering Excellence"
+
+services:
+  - title: "Systems Architecture (Go & AWS)"
+    icon: "fa-server" # Icono de Servidor o Nube
+    text: "Lead the design and implementation of highly-available, cost-optimized systems using domain-driven design (DDD) principles. Deep expertise in **Go (Golang)** for high-concurrency, low-latency microservices, leveraging **AWS** services (ECS, Lambda, SQS/SNS) to meet complex scaling requirements."
+
+  - title: "Performance & Modernization"
+    icon: "fa-cogs" # Icono de Engranajes/Procesos
+    text: "Specialized in migrating legacy PHP/Java monoliths to agile, cloud-native architectures. Successfully led CI/CD automation initiatives resulting in a **95% reduction in deployment time** and significant infrastructure cost savings through optimization and cloud resource tailoring."
+
+  - title: "Technical Leadership & Mentoring"
+    icon: "fa-users" # Icono de Equipo/Liderazgo
+    text: "Mentoring Senior and Staff-level engineers, establishing robust engineering standards (code review, testing strategies), and fostering a high-performance DevOps culture. Act as the bridge between engineering teams and business goals to ensure architectural decisions align with enterprise strategy."

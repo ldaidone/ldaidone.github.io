@@ -1,0 +1,15 @@
+# _data/es.yml
+
+# --- 1. CORE CONFIGURATION ---
+lang_code: "es"
+lang_name: "Español"
+lang_switcher_text: "English"
+switcher_url: "{{ site.baseurl }}/api/en.html" # Ruta a inglés
+
+# --- 2. HEADER & INTRO ---
+header:
+  pitch: "Staff Software Engineer | Arquitecto de Sistemas y DevOps"
+  motto: "Modernización, Rendimiento y Liderazgo Técnico | Más de 15 Años en AWS, Go y E-commerce."
+  cta_text: "Agendar una Introducción de 30 minutos"
+
+# ... (El resto de las secciones, totalmente traducidas) ...

@@ -1,0 +1,34 @@
+# --- 1. CORE CONFIGURATION ---
+lang_code: "en"
+lang_name: "English"
+lang_switcher_text: "Español"
+switcher_url: "{{ site.baseurl }}/api/es.html" # Ruta a español
+
+# --- 2. HEADER & INTRO ---
+header:
+  pitch: "Staff Software Engineer | Systems & DevOps Architect"
+  motto: "Modernization, Performance, and Technical Leadership | 15+ Years Experience in AWS, Go, and E-commerce."
+  cta_text: "Schedule a 30-min Intro"
+
+# --- 3. SERVICES (OFFERTA DE VALOR) ---
+services_heading: "Technical Expertise"
+services_subheading: "Core Offerings and Value Proposition"
+services:
+  - title: "Systems Architecture & Go"
+    icon: "fa-server" # Font Awesome icon
+    text: "Leading the design of scalable, low-cost infrastructures. Deep expertise in Go (Golang) and microservices patterns on AWS."
+  - title: "Modernization & Performance"
+    icon: "fa-cogs"
+    text: "Migration from PHP/Java monoliths to agile, cloud-native architectures. Experience in AWS ECS, Lambda, and CI/CD automation."
+  - title: "Technical Leadership & Mentoring"
+    icon: "fa-users"
+    text: "Mentoring Senior/Junior teams, rigorous code review, and driving technical excellence across the engineering organization."
+
+# --- 4. PROJECTS (PORTFOLIO) ---
+projects_heading: "Key Open Source & Technical Contributions"
+projects_subheading: "Proof of Staff-Level Engineering"
+
+# --- 5. CONTACT & FOOTER ---
+contact_heading: "Ready to Discuss Architecture?"
+contact_subheading: "Let's connect to drive performance and modernization initiatives."
+download_cv_text: "Download ATS-Optimized CV (PDF)"
