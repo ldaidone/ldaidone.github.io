@@ -2,14 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Schedule a Consultation</h2>
-        <h3 class="section-subheading text-muted">Let's discuss your architecture, modernization, or performance needs.</h3>
+        {% assign lang = site.data[page.lang] %}
+        <h2 class="section-heading">{{ lang.schedule_heading | default: "Schedule a Consultation" }}</h2>
+        <h3 class="section-subheading text-muted">{{ lang.schedule_subheading | default: "Let's discuss your architecture, modernization, or performance needs." }}</h3>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <p class="text-center" style="margin-bottom: 30px;">
-          Book a quick 30-minute introductory call to explore how my expertise in **PHP/Laravel Architecture, Go migration, and system performance** can benefit your organization.
+          {{ lang.schedule_description | default: "Book a quick 30-minute introductory call to explore how my expertise in **PHP/Laravel Architecture, Go migration, and system performance** can benefit your organization." }}
         </p>
 
         <div class="calendly-inline-widget" data-url="https://calendly.com/leo-daidone" style="min-width:320px;height:700px;"></div>

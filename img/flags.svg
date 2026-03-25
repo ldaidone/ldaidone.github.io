@@ -1,0 +1,44 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><!-- Definitions for Clipping --><defs><clipPath id="circleView"><circle cx="50" cy="50" r="50" /></clipPath><clipPath id="leftHalf"><rect x="0" y="0" width="50" height="100" /></clipPath><clipPath id="rightHalf"><rect x="50" y="0" width="50" height="100" /></clipPath></defs><!-- Container Group with Circular Clip --><g clip-path="url(#circleView)"><!-- LEFT SIDE: ARGENTINA -->
+<g clip-path="url(#leftHalf)">
+  <!-- Background Sky Blue -->
+  <rect x="0" y="0" width="50" height="100" fill="#74ACDF" />
+  <!-- White Middle Stripe -->
+  <rect x="0" y="33.3" width="50" height="33.4" fill="#FFFFFF" />
+  <!-- Sun of May (Simplified for scale) -->
+  <circle cx="25" cy="50" r="8" fill="#F6B40E" />
+  <circle cx="25" cy="50" r="3" fill="#843511" fill-opacity="0.2" />
+</g>
+
+<!-- RIGHT SIDE: USA -->
+<g clip-path="url(#rightHalf)">
+  <!-- Stripes -->
+  <rect x="50" y="0" width="50" height="100" fill="#FFFFFF" />
+  <!-- Red Stripes -->
+  <rect x="50" y="0" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="15.38" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="30.76" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="46.14" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="61.52" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="76.90" width="50" height="7.69" fill="#B22234" />
+  <rect x="50" y="92.28" width="50" height="7.69" fill="#B22234" />
+  
+  <!-- Blue Canton -->
+  <rect x="50" y="0" width="30" height="53.8" fill="#3C3B6E" />
+  <!-- Stars (Abstracted for clarity at small sizes) -->
+  <circle cx="56" cy="10" r="1.5" fill="white" />
+  <circle cx="65" cy="10" r="1.5" fill="white" />
+  <circle cx="74" cy="10" r="1.5" fill="white" />
+  <circle cx="56" cy="20" r="1.5" fill="white" />
+  <circle cx="65" cy="20" r="1.5" fill="white" />
+  <circle cx="74" cy="20" r="1.5" fill="white" />
+  <circle cx="56" cy="30" r="1.5" fill="white" />
+  <circle cx="65" cy="30" r="1.5" fill="white" />
+  <circle cx="74" cy="30" r="1.5" fill="white" />
+  <circle cx="56" cy="40" r="1.5" fill="white" />
+  <circle cx="65" cy="40" r="1.5" fill="white" />
+  <circle cx="74" cy="40" r="1.5" fill="white" />
+</g>
+
+<!-- Center Divider Line (Optional for better definition) -->
+<line x1="50" y1="0" x2="50" y2="100" stroke="white" stroke-width="0.5" opacity="0.3" />
+</g></svg>

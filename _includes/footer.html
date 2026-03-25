@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="{{ site.baseurl }}favicon.png" alt="logo" style="
+                <img src="{{ site.baseurl }}/favicon.png" alt="logo" style="
                     width: 48px;
                     border-radius: 50px;
                     margin-right: 20px;
@@ -18,9 +18,10 @@
                 </ul>
             </div>
             <div class="col-md-4">
+                {% assign lang = site.data[page.lang] %}
                 <ul class="list-inline quicklinks">
-                    <li><a href="#" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#termsModal">Terms of Use</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#privacyModal">{{ lang.footer_privacy | default: "Privacy Policy" }}</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#termsModal">{{ lang.footer_terms | default: "Terms of Use" }}</a></li>
                 </ul>
             </div>
         </div>

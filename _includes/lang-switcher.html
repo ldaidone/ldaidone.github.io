@@ -1,0 +1,22 @@
+{% comment %}
+  Language Switcher Component
+  Usage: {% include lang-switcher.html current_lang=page.lang %}
+{% endcomment %}
+
+{% assign current_lang = include.current_lang | default: 'en' %}
+{% assign other_lang = 'es' %}
+{% if current_lang == 'es' %}
+  {% assign other_lang = 'en' %}
+{% endif %}
+
+{% assign lang_data = site.data[other_lang] %}
+
+<div class="lang-switcher">
+  <a href="{{ site.baseurl }}/{{ other_lang }}/"
+     class="lang-btn"
+     title="Switch to {{ lang_data.lang_name }}"
+     data-lang="{{ other_lang }}">
+    <i class="fa fa-globe"></i>
+    <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+  </a>
+</div>

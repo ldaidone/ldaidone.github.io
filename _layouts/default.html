@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 
-  {% include head.html %}
+    {% include head.html %}
+    
+    <!-- Hreflang tags for SEO -->
+    <link rel="alternate" hreflang="en" href="{{ site.baseurl }}/en/">
+    <link rel="alternate" hreflang="es" href="{{ site.baseurl }}/es/">
+    <link rel="alternate" hreflang="x-default" href="{{ site.baseurl }}/en/">
+  </head>
 
-    <body id="page-top" class="index">
+  <body id="page-top" class="index" data-lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
 
     {% include header.html %}
     {% include services.html %}
@@ -19,6 +26,7 @@
     {% include js.html %}
     {% include analytics.html %}
     {% include modals.html %}
+    {% include back-to-top.html %}
 
     </body>
 </html>
