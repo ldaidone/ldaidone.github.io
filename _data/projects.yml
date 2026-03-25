@@ -6,13 +6,22 @@ projects_subheading: "Proof of Staff-Level Engineering and Architectural Impact"
 
 # --- List of Projects (Portfolio Items) ---
 projects:
+  - title: "cerebras-cloud-sdk-go"
+    subtitle: "Go / SDK / AI / Cerebras"
+    image: "cerebras-go.svg"
+    description: "Architected and developed an idiomatic Go SDK for the Cerebras Cloud API, enabling high-performance integration with CS-2 and CS-3 systems. The library focuses on type-safe interaction with Inference and Chat endpoints, providing robust abstractions for ultra-fast AI compute workloads."
+    client: "Open Source Community"
+    category: "AI Infrastructure"
+    date: "2026"
+    url: "https://github.com/ldaidone/cerebras-cloud-sdk-go"
+
   - title: "Goembedx (High-Performance Embedding Library)"
     subtitle: "Go / Concurrency / Performance"
     image: "goembedx.jpeg"
     description: "Architected and developed Goembedx, a highly optimized library for concurrent data embedding and processing. This solution demonstrates deep expertise in Go's runtime and memory model, significantly improving performance in high-concurrency data manipulation tasks."
     client: "Open Source Community"
     category: "System Performance"
-    date: "2024"
+    date: "2025"
     url: "https://github.com/ldaidone/goembedx"
 
   - title: "Gomemo (Memoization Library for Go)"
@@ -21,7 +30,7 @@ projects:
     description: "Created Gomemo, a versatile and lightweight memoization library for Go. This tool enhances application efficiency by caching function results, directly reducing CPU load and improving response times for expensive, repeatable computations."
     client: "Open Source Community"
     category: "Code Efficiency"
-    date: "2024"
+    date: "2025"
     url: "https://github.com/ldaidone/gomemo"
 
   - title: "Laravel-DDD-Starter Kit"
@@ -30,7 +39,7 @@ projects:
     description: "Authored and maintained a reference implementation for complex Laravel applications, strictly enforcing Domain-Driven Design (DDD) principles and Clean Architecture. This starter kit is a foundational tool for standardizing code quality and enforcing robust separation of concerns."
     client: "Software Architecture"
     category: "Standardization"
-    date: "2022"
+    date: "2025"
     url: "https://github.com/ldaidone/laravel-ddd-starter"
 
   - title: "Laravel-DDD-Commands"
@@ -39,5 +48,5 @@ projects:
     description: "Developed a set of custom artisan commands to automate scaffolding and maintain the strict DDD structure of the Starter Kit. This utility significantly speeds up the development process while ensuring adherence to architectural standards."
     client: "Development Tools"
     category: "Developer Productivity"
-    date: "2022"
+    date: "2025"
     url: "https://github.com/ldaidone/laravel-ddd-commands"

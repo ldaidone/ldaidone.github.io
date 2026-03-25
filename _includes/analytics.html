@@ -1,0 +1,70 @@
+<!-- Google Analytics Event Tracking -->
+<script>
+// Track outbound link clicks
+document.addEventListener('click', function(e) {
+    var target = e.target.closest('a');
+    if (target && target.href) {
+        // External links
+        if (target.hostname !== window.location.hostname) {
+            gtag('event', 'click', {
+                'event_category': 'Outbound Link',
+                'event_label': target.href,
+                'transport_type': 'beacon'
+            });
+        }
+        // Social links
+        if (target.classList.contains('social-buttons') || target.closest('.social-buttons')) {
+            gtag('event', 'click', {
+                'event_category': 'Social Link',
+                'event_label': target.href,
+                'transport_type': 'beacon'
+            });
+        }
+        // Email links
+        if (target.href.startsWith('mailto:')) {
+            gtag('event', 'click', {
+                'event_category': 'Email Link',
+                'event_label': target.href,
+                'transport_type': 'beacon'
+            });
+        }
+        // Download links
+        if (target.hasAttribute('download')) {
+            gtag('event', 'click', {
+                'event_category': 'Download',
+                'event_label': target.href,
+                'transport_type': 'beacon'
+            });
+        }
+    }
+});
+
+// Track scroll depth (25%, 50%, 75%, 100%)
+var scrollTracked = {25: false, 50: false, 75: false, 100: false};
+window.addEventListener('scroll', function() {
+    var scrollPercent = Math.round((window.scrollY + window.innerHeight) / document.body.scrollHeight * 100);
+    
+    for (var level in scrollTracked) {
+        if (scrollPercent >= level && !scrollTracked[level]) {
+            scrollTracked[level] = true;
+            gtag('event', 'scroll', {
+                'event_category': 'Scroll Depth',
+                'event_label': level + '%',
+                'value': parseInt(level),
+                'non_interaction': true
+            });
+        }
+    }
+});
+
+// Track form submissions
+document.addEventListener('submit', function(e) {
+    if (e.target.tagName === 'FORM') {
+        gtag('event', 'submit', {
+            'event_category': 'Form',
+            'event_label': e.target.id || 'Contact Form',
+            'transport_type': 'beacon'
+        });
+    }
+});
+</script>
