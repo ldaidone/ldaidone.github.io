@@ -1,0 +1,52 @@
+# _data/projects_es.yml
+
+# --- Encabezado de Sección ---
+projects_heading: "Principales Contribuciones Open Source"
+projects_subheading: "Evidencia de Ingeniería de Nivel Staff e Impacto Arquitectónico"
+
+# --- Lista de Proyectos ---
+projects:
+  - title: "cerebras-cloud-sdk-go"
+    subtitle: "Go / SDK / AI / Cerebras"
+    image: "cerebras-go.svg"
+    description: "Arquitecturé y desarrollé un SDK idiomático en Go para la API Cloud de Cerebras, habilitando integración de alto rendimiento con sistemas CS-2 y CS-3. La librería se enfoca en interacción type-safe con endpoints de Inferencia y Chat, proporcionando abstracciones robustas para cargas de trabajo de computación AI ultra-rápidas."
+    client: "Comunidad Open Source"
+    category: "Infraestructura de AI"
+    date: "2026"
+    url: "https://github.com/ldaidone/cerebras-cloud-sdk-go"
+
+  - title: "Goembedx (Librería de Embeddings de Alto Rendimiento)"
+    subtitle: "Go / Concurrencia / Rendimiento"
+    image: "goembedx.jpeg"
+    description: "Arquitecturé y desarrollé Goembedx, una librería altamente optimizada para embedding concurrente y procesamiento de datos. Esta solución demuestra experiencia profunda en el runtime y modelo de memoria de Go, mejorando significativamente el rendimiento en tareas de manipulación de datos de alta concurrencia."
+    client: "Comunidad Open Source"
+    category: "Rendimiento de Sistemas"
+    date: "2025"
+    url: "https://github.com/ldaidone/goembedx"
+
+  - title: "Gomemo (Librería de Memoización para Go)"
+    subtitle: "Go / Caching / Eficiencia"
+    image: "gomemo.png"
+    description: "Creé Gomemo, una librería de memoización versátil y ligera para Go. Esta herramienta mejora la eficiencia de aplicaciones cacheando resultados de funciones, reduciendo directamente la carga de CPU y mejorando tiempos de respuesta para computaciones costosas y repetibles."
+    client: "Comunidad Open Source"
+    category: "Eficiencia de Código"
+    date: "2025"
+    url: "https://github.com/ldaidone/gomemo"
+
+  - title: "Laravel-DDD-Starter Kit"
+    subtitle: "PHP / Domain-Driven Design / Clean Architecture"
+    image: "laravel-ddd.jpeg"
+    description: "Autor y mantenedor de una implementación de referencia para aplicaciones Laravel complejas, aplicando estrictamente principios de Domain-Driven Design (DDD) y Clean Architecture. Este starter kit es una herramienta fundamental para estandarizar calidad de código y forzar separación robusta de responsabilidades."
+    client: "Arquitectura de Software"
+    category: "Estandarización"
+    date: "2025"
+    url: "https://github.com/ldaidone/laravel-ddd-starter"
+
+  - title: "Laravel-DDD-Commands"
+    subtitle: "PHP / Domain-Driven Design / Automatización"
+    image: "laravel-ddd.jpeg"
+    description: "Desarrollé un conjunto de comandos artisan personalizados para automatizar scaffolding y mantener la estructura DDD estricta del Starter Kit. Esta utilidad acelera significativamente el proceso de desarrollo mientras asegura adherencia a estándares arquitectónicos."
+    client: "Herramientas de Desarrollo"
+    category: "Productividad de Desarrolladores"
+    date: "2025"
+    url: "https://github.com/ldaidone/laravel-ddd-commands"

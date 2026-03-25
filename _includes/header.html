@@ -42,20 +42,25 @@
                     <li class="hidden liquid-pill">
                         <a href="#page-top"></a>
                     </li>
+                    {% assign lang = site.data[page.lang] %}
                     <li class="liquid-pill">
-                        <a class="page-scroll" href="#services">Expertise</a>
+                        <a class="page-scroll" href="#services">{{ lang.nav_expertise | default: "Expertise" }}</a>
                     </li>
                     <li class="liquid-pill">
-                        <a class="page-scroll" href="#portfolio">Projects</a>
+                        <a class="page-scroll" href="#portfolio">{{ lang.nav_projects | default: "Projects" }}</a>
                     </li>
                     <li class="liquid-pill">
-                        <a class="page-scroll" href="#about">Timeline</a>
+                        <a class="page-scroll" href="#about">{{ lang.nav_timeline | default: "Timeline" }}</a>
                     </li>
                     <li class="liquid-pill">
-                        <a class="page-scroll" href="#schedule">Schedule</a>
+                        <a class="page-scroll" href="#schedule">{{ lang.nav_schedule | default: "Schedule" }}</a>
                     </li>
                     <li class="liquid-pill">
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">{{ lang.nav_contact | default: "Contact" }}</a>
+                    </li>
+                    <!-- Language Switcher -->
+                    <li class="lang-switcher-item">
+                        {% include lang-switcher-enhanced.html style="pill" %}
                     </li>
                 </ul>
             </div>
@@ -77,9 +82,10 @@
             </div>
 
             <div class="intro-text">
+                {% assign lang = site.data[page.lang] %}
                 <div class="intro-lead-in">Leonardo Daidone</div>
-                <div class="intro-heading">Senior/Staff Software Engineer | Systems & DevOps Architect</div>
-                <a href="#services" class="page-scroll btn btn-xl">Discover More</a>
+                <div class="intro-heading">{{ lang.header.pitch | default: "Senior/Staff Software Engineer | Systems & DevOps Architect" }}</div>
+                <a href="#services" class="page-scroll btn btn-xl">{{ lang.header_discover_more | default: "Discover More" }}</a>
             </div>
         </div>
     </header>

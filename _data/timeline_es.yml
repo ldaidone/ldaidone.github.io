@@ -1,0 +1,37 @@
+# _data/timeline_es.yml
+
+timeline_heading: "Mi Trayectoria Profesional"
+timeline_subheading: "15+ Años de Evolución y Liderazgo en Ingeniería"
+
+timeline:
+  # 1. Staff Engineer
+  - date: "May 2019 - Presente"
+    title: "Staff/Senior Software Engineer: Arquitectura y Modernización"
+    company: "Sisu media Inc."
+    description: "Lideré la transición arquitectónica de un <strong>monolito PHP</strong> heredado a una plataforma de microservicios de alta disponibilidad en <strong>Go (Golang)</strong> en AWS. Este proyecto incluyó desarrollar un pipeline CI/CD que <strong>redujo el tiempo de deployment en 95%</strong> y logró una <strong>mejora del 10% en velocidades de consultas clave</strong>."
+    image: "rocket.jpg"
+    icon: "cogs"
+
+  # 2. Senior Developer
+  - date: "Ene 2015 - May 2019"
+    title: "Senior Software Developer: Arquitecto de Sistemas PHP"
+    company: "ArroyoLabs Inc."
+    description: "Contribuyente arquitectónico del <strong>micro-framework PHP Erdiko</strong> y desarrollador clave en la <strong>API Laravel/SOAP</strong> para CTM. Automaticé el procesamiento de <strong>feeds de órdenes de Magento</strong> vía PHP/Bash, <strong>reduciendo el tiempo de procesamiento en 95%</strong> y asegurando precisión de datos para operaciones de e-commerce."
+    image: "architecture.jpg"
+    icon: "server"
+
+  # 3. Foundational Roles
+  - date: "2011 - 2014 (Fundacional)"
+    title: "Roles Full-Stack y Backend Diversos"
+    company: "Summa, U&R, C. Austral"
+    description: "Desarrollé y lancé el MVP de Freight Connections (<strong>PHP/CodeIgniter</strong>), diseñé la interfaz web <strong>Cloud Experience (CakePHP)</strong>, y contribuí a aplicaciones en <strong>Ruby on Rails</strong>. Construí una sólida base en entornos backend y full-stack diversos."
+    image: "code-icon.jpg"
+    icon: "code"
+
+  # 4. Development Lead
+  - date: "Mar 2005 - Dic 2010"
+    title: "Líder de Desarrollo: Arquitecto de Sistemas Nacionales"
+    company: "SINTYS"
+    description: "Lideré el diseño de sistemas a escala nacional (Digitalización del Registro Civil, <strong>15-20 millones</strong> de registros) e integré <strong>8 Registros de Propiedad</strong> vía <strong>Servicios Web SOAP</strong>. Este trabajo **redujo la latencia de datos en 98%**, demostrando una capacidad temprana para diseño de sistemas de alto impacto y gran escala."
+    image: "network.jpg"
+    icon: "users"

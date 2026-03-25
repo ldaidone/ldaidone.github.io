@@ -2,13 +2,23 @@
 lang_code: "en"
 lang_name: "English"
 lang_switcher_text: "Español"
-switcher_url: "{{ site.baseurl }}/api/es.html" # Ruta a español
+switcher_url: "{{ site.baseurl }}/api/es.html"
 
 # --- 2. HEADER & INTRO ---
 header:
   pitch: "Staff Software Engineer | Systems & DevOps Architect"
   motto: "Modernization, Performance, and Technical Leadership | 15+ Years Experience in AWS, Go, and E-commerce."
-  cta_text: "Schedule a 30-min Intro"
+  cta_text: "Discover More"
+
+header_discover_more: "Discover More"
+header_schedule_cta: "Schedule a 30-min Intro"
+
+# --- Navigation ---
+nav_expertise: "Expertise"
+nav_projects: "Projects"
+nav_timeline: "Timeline"
+nav_schedule: "Schedule"
+nav_contact: "Contact"
 
 # --- 3. SERVICES (OFFERTA DE VALOR) ---
 services_heading: "Technical Expertise"
@@ -28,7 +38,31 @@ services:
 projects_heading: "Key Open Source & Technical Contributions"
 projects_subheading: "Proof of Staff-Level Engineering"
 
-# --- 5. CONTACT & FOOTER ---
+# --- 5. TIMELINE (ABOUT) ---
+timeline_heading: "My Journey"
+timeline_subheading: "15+ Years of Professional Evolution"
+
+# --- 6. SCHEDULE ---
+schedule_heading: "Schedule a Consultation"
+schedule_subheading: "Let's discuss your architecture, modernization, or performance needs."
+schedule_description: "Book a quick 30-minute introductory call to explore how my expertise in **PHP/Laravel Architecture, Go migration, and system performance** can benefit your organization."
+
+# --- 7. CONTACT & FOOTER ---
 contact_heading: "Ready to Discuss Architecture?"
 contact_subheading: "Let's connect to drive performance and modernization initiatives."
 download_cv_text: "Download ATS-Optimized CV (PDF)"
+cv_download_text: "Ready to review my full track record?"
+
+# Contact Form
+contact_placeholder_name: "Your Name *"
+contact_placeholder_email: "Your Email *"
+contact_placeholder_phone: "Your Phone (Optional)"
+contact_placeholder_message: "Your Message *"
+contact_error_name: "Please enter your name."
+contact_error_email: "Please enter your email address."
+contact_error_message: "Please enter a message."
+contact_button_send: "Send Message"
+
+# Footer
+footer_privacy: "Privacy Policy"
+footer_terms: "Terms of Use"

@@ -4,7 +4,7 @@
 lang_code: "es"
 lang_name: "Español"
 lang_switcher_text: "English"
-switcher_url: "{{ site.baseurl }}/api/en.html" # Ruta a inglés
+switcher_url: "{{ site.baseurl }}/api/en.html"
 
 # --- 2. HEADER & INTRO ---
 header:
@@ -12,4 +12,59 @@ header:
   motto: "Modernización, Rendimiento y Liderazgo Técnico | Más de 15 Años en AWS, Go y E-commerce."
   cta_text: "Agendar una Introducción de 30 minutos"
 
-# ... (El resto de las secciones, totalmente traducidas) ...
+header_discover_more: "Conoce Más"
+header_schedule_cta: "Agendar Intro de 30 min"
+
+# --- Navigation ---
+nav_expertise: "Expertise"
+nav_projects: "Proyectos"
+nav_timeline: "Línea de Tiempo"
+nav_schedule: "Agenda"
+nav_contact: "Contacto"
+
+# --- 3. SERVICES (OFFERTA DE VALOR) ---
+services_heading: "Experiencia Técnica"
+services_subheading: "Principales Áreas de Experiencia"
+services:
+  - title: "Arquitectura de Sistemas y Go"
+    icon: "fa-server"
+    text: "Liderazgo en diseño de infraestructuras escalables y de bajo costo. Experiencia profunda en Go (Golang) y patrones de microservicios en AWS."
+  - title: "Modernización y Rendimiento"
+    icon: "fa-cogs"
+    text: "Migración de monolitos PHP/Java a arquitecturas ágiles en la nube. Experiencia en AWS ECS, Lambda y automatización CI/CD."
+  - title: "Liderazgo Técnico y Mentoring"
+    icon: "fa-users"
+    text: "Mentoring de equipos Senior/Junior, revisión rigurosa de código, e impulso de excelencia técnica en organizaciones de ingeniería."
+
+# --- 4. PROJECTS (PORTFOLIO) ---
+projects_heading: "Principales Contribuciones Open Source y Técnicas"
+projects_subheading: "Evidencia de Nivel Staff en Ingeniería"
+
+# --- 5. TIMELINE (ABOUT) ---
+timeline_heading: "Mi Trayectoria"
+timeline_subheading: "15+ Años de Evolución Profesional"
+
+# --- 6. SCHEDULE ---
+schedule_heading: "Agenda una Consulta"
+schedule_subheading: "Hablemos sobre tu arquitectura, modernización o necesidades de rendimiento."
+schedule_description: "Reserva una rápida llamada introductoria de 30 minutos para explorar cómo mi experiencia en **Arquitectura PHP/Laravel, migración a Go, y rendimiento de sistemas** puede beneficiar a tu organización."
+
+# --- 7. CONTACT & FOOTER ---
+contact_heading: "¿Listo para Discutir Arquitectura?"
+contact_subheading: "¡Conectemos para impulsar iniciativas de rendimiento y modernización!"
+download_cv_text: "Descargar mi CV Optimizado para ATS (PDF)"
+cv_download_text: "¿Listo para revisar mi trayectoria completa?"
+
+# Contact Form
+contact_placeholder_name: "Tu Nombre *"
+contact_placeholder_email: "Tu Email *"
+contact_placeholder_phone: "Tu Teléfono (Opcional)"
+contact_placeholder_message: "Tu Mensaje *"
+contact_error_name: "Por favor ingresa tu nombre."
+contact_error_email: "Por favor ingresa tu email."
+contact_error_message: "Por favor ingresa un mensaje."
+contact_button_send: "Enviar Mensaje"
+
+# Footer
+footer_privacy: "Política de Privacidad"
+footer_terms: "Términos de Uso"

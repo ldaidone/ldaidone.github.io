@@ -1,7 +1,63 @@
----
-layout: default
----
-
-<div class="home">
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="x-default">
+<head>
+  <meta charset="utf-8">
+  <title>Leo Daidone</title>
+  <meta http-equiv="refresh" content="0; url=/en/">
+  <link rel="canonical" href="/en/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="es" href="/es/">
+  <link rel="alternate" hreflang="x-default" href="/en/">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    .redirect-container {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .redirect-links {
+      margin-top: 1.5rem;
+    }
+    .redirect-links a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .redirect-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="redirect-container">
+    <h2>Leo Daidone</h2>
+    <p>Redirecting to English version...</p>
+    <div class="redirect-links">
+      <a href="/en/">English (Default)</a>
+      <a href="/es/">Español</a>
+    </div>
+  </div>
+  <script>
+    // Optional: Auto-redirect to preferred language based on browser
+    (function() {
+      var userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.startsWith('es')) {
+        window.location.href = '/es/';
+      } else {
+        window.location.href = '/en/';
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% comment %}
+  Enhanced Language Switcher Component
+  Usage: {% include lang-switcher-enhanced.html style="pill" %}
+  
+  Available styles:
+  - classic (default) - Clean globe with border
+  - pill - Modern pill-shaped with shine effect
+  - flag - Circular flags with country codes
+  - minimal - Subtle with animated underline
+  - neon - Eye-catching glow effect
+  - capsule - Sliding gradient capsule
+{% endcomment %}
+
+{% assign style = include.style | default: 'classic' %}
+{% assign current_lang = page.lang | default: 'en' %}
+{% assign other_lang = 'es' %}
+{% if current_lang == 'es' %}
+  {% assign other_lang = 'en' %}
+{% endif %}
+
+{% assign lang_data = site.data[other_lang] %}
+
+<div class="lang-switcher style-{{ style }}">
+  <a href="{{ site.baseurl }}/{{ other_lang }}/"
+     class="lang-btn"
+     title="Switch to {{ lang_data.lang_name }}"
+     data-lang="{{ other_lang }}"
+     aria-label="Switch language to {{ lang_data.lang_name }}">
+    
+    {% if style == 'flag' %}
+      <!-- Flag Badge Style with Custom SVG -->
+      <span class="lang-flag-circle">
+        <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      </span>
+      <span class="lang-text">{{ lang_data.lang_code | upcase }}</span>
+    {% elsif style == 'minimal' %}
+      <!-- Minimalist Style with Custom SVG -->
+      <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg lang-flag-small" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+    {% elsif style == 'neon' %}
+      <!-- Neon Glow Style with Custom SVG -->
+      <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg lang-flag-small" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+    {% elsif style == 'capsule' %}
+      <!-- Sliding Capsule Style with Custom SVG -->
+      <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg lang-flag-small" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+    {% elsif style == 'pill' %}
+      <!-- Pill Toggle Style with Custom SVG -->
+      <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg lang-flag-small" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+    {% else %}
+      <!-- Classic Style with Custom SVG -->
+      <img src="{{ site.baseurl }}/img/flags.svg" alt="{{ lang_data.lang_name }}" class="lang-flag-svg lang-flag-small" style="transform: scaleX({% if other_lang == 'es' %}-1{% else %}1{% endif %});">
+      <span class="lang-text">{{ lang_data.lang_switcher_text }}</span>
+    {% endif %}
+    
+  </a>
+</div>

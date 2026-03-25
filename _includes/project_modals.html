@@ -1,4 +1,10 @@
-{% for project in site.data.projects.projects %}
+{% if page.lang == 'es' %}
+  {% assign projects_data = site.data.projects_es %}
+{% else %}
+  {% assign projects_data = site.data.projects %}
+{% endif %}
+
+{% for project in projects_data.projects %}
 <div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">

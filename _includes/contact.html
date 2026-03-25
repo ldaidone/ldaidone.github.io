@@ -2,8 +2,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Me</h2>
-                    <h3 class="section-subheading text-muted">Do not hesitate to reach out!</h3>
+                    {% assign lang = site.data[page.lang] %}
+                    <h2 class="section-heading">{{ lang.contact_heading | default: "Contact Me" }}</h2>
+                    <h3 class="section-subheading text-muted">{{ lang.contact_subheading | default: "Do not hesitate to reach out!" }}</h3>
                 </div>
             </div>
             <div class="row">
@@ -12,37 +13,43 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="{{ lang.contact_placeholder_name | default: "Your Name *" }}" id="name" required data-validation-required-message="{{ lang.contact_error_name | default: "Please enter your name." }}">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="{{ lang.contact_placeholder_email | default: "Your Email *" }}" id="email" required data-validation-required-message="{{ lang.contact_error_email | default: "Please enter your email address." }}">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone (Optional)" id="phone">
+                                    <input type="tel" class="form-control" placeholder="{{ lang.contact_placeholder_phone | default: "Your Phone (Optional)" }}" id="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="{{ lang.contact_placeholder_message | default: "Your Message *" }}" id="message" required data-validation-required-message="{{ lang.contact_error_message | default: "Please enter a message." }}"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">{{ lang.contact_button_send | default: "Send Message" }}</button>
                             </div>
                         </div>
                     </form>
                     <div class="row text-center" style="margin-top: 50px;">
                         <div class="col-lg-12">
-                            <h3 class="section-subheading">Ready to review my full track record?</h3>
-                            <a href="{{ site.baseurl }}/downloads/CV_Leo_Daidone_en.pdf" class="btn btn-xl btn-primary" download>
-                                <i class="fa fa-download"></i> Download My ATS-Optimized CV
+                            <h3 class="section-subheading">{{ lang.cv_download_text | default: "Ready to review my full track record?" }}</h3>
+                            {% if page.lang == 'es' %}
+                            <a href="{{ site.baseurl }}/downloads/CV_Leo_Daidone_es.pdf" class="btn btn-xl btn-primary" download>
+                                <i class="fa fa-download"></i> {{ lang.download_cv_text | default: "Descargar mi CV optimizado para ATS" }}
                             </a>
+                            {% else %}
+                            <a href="{{ site.baseurl }}/downloads/CV_Leo_Daidone_en.pdf" class="btn btn-xl btn-primary" download>
+                                <i class="fa fa-download"></i> {{ lang.download_cv_text | default: "Download My ATS-Optimized CV" }}
+                            </a>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

@@ -1049,3 +1049,492 @@ body {
 .alert-success {
     background-color: green !important;
 }
+
+/* Language Switcher Styles */
+.lang-switcher {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Custom Flag SVG Styles */
+.lang-flag-svg {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.4s ease;
+}
+
+.lang-flag-svg.lang-flag-small {
+    width: 24px;
+    height: 24px;
+}
+
+.lang-switcher .lang-btn:hover .lang-flag-svg,
+.lang-switcher.style-pill .lang-btn:hover .lang-flag-svg {
+    transform: scale(1.15);
+}
+
+/* ========================================
+   STYLE 1: Classic Globe (Default)
+   Clean, minimal, professional
+   ======================================== */
+.lang-switcher .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher .lang-btn:hover,
+.lang-switcher .lang-btn:focus,
+.lang-switcher .lang-btn:active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.lang-switcher .lang-text {
+    display: inline-block;
+}
+
+/* ========================================
+   STYLE 2: Pill Toggle
+   Modern pill-shaped with smooth transition
+   ======================================== */
+.lang-switcher.style-pill .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-switcher.style-pill .lang-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.lang-switcher.style-pill .lang-btn:hover::before {
+    left: 100%;
+}
+
+.lang-switcher.style-pill .lang-btn:hover,
+.lang-switcher.style-pill .lang-btn:focus {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.lang-switcher.style-pill .lang-btn:hover .lang-flag-svg {
+    transform: scale(1.2);
+}
+
+/* ========================================
+   STYLE 3: Flag Badge
+   Circular flags with country codes
+   ======================================== */
+.lang-switcher.style-flag {
+    position: relative;
+}
+
+.lang-switcher.style-flag .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px 6px 6px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.lang-switcher.style-flag .lang-flag-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher.style-flag .lang-flag-svg {
+    width: 32px;
+    height: 32px;
+}
+
+.lang-switcher.style-flag .lang-btn:hover,
+.lang-switcher.style-flag .lang-btn:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.lang-switcher.style-flag .lang-btn:hover .lang-flag-circle {
+    transform: rotate(360deg) scale(1.1);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* ========================================
+   STYLE 4: Minimalist Underline
+   Subtle with animated underline
+   ======================================== */
+.lang-switcher.style-minimal .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    border: none;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.lang-switcher.style-minimal .lang-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
+}
+
+.lang-switcher.style-minimal .lang-btn:hover,
+.lang-switcher.style-minimal .lang-btn:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lang-switcher.style-minimal .lang-btn:hover::after,
+.lang-switcher.style-minimal .lang-btn:focus::after {
+    width: 100%;
+}
+
+.lang-switcher.style-minimal .lang-btn:hover .lang-flag-svg {
+    transform: scale(1.15);
+}
+
+/* ========================================
+   STYLE 5: Neon Glow
+   Eye-catching with glow effect
+   ======================================== */
+.lang-switcher.style-neon .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(102, 126, 234, 0.5);
+    border-radius: 8px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+.lang-switcher.style-neon .lang-btn:hover,
+.lang-switcher.style-neon .lang-btn:focus {
+    color: #fff;
+    background: rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.6),
+                0 0 40px rgba(102, 126, 234, 0.3);
+    transform: translateY(-2px);
+}
+
+.lang-switcher.style-neon .lang-btn:hover .lang-flag-svg {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.8));
+}
+
+/* ========================================
+   STYLE 6: Sliding Capsule
+   Animated capsule with sliding effect
+   ======================================== */
+.lang-switcher.style-capsule {
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-switcher.style-capsule .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 1;
+}
+
+.lang-switcher.style-capsule .lang-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.lang-switcher.style-capsule .lang-btn:hover::before,
+.lang-switcher.style-capsule .lang-btn:focus::before {
+    width: 100%;
+}
+
+.lang-switcher.style-capsule .lang-btn:hover,
+.lang-switcher.style-capsule .lang-btn:focus {
+    color: #fff;
+    border-color: transparent;
+    text-decoration: none;
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.lang-switcher.style-capsule .lang-btn:hover .lang-flag-svg {
+    transform: scale(1.2);
+}
+
+/* ========================================
+   Mobile Responsive Styles
+   ======================================== */
+@media (max-width: 767px) {
+    .lang-switcher {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .lang-switcher .lang-btn,
+    .lang-switcher.style-pill .lang-btn,
+    .lang-switcher.style-flag .lang-btn,
+    .lang-switcher.style-minimal .lang-btn,
+    .lang-switcher.style-neon .lang-btn,
+    .lang-switcher.style-capsule .lang-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Disable hover effects on mobile */
+    .lang-switcher .lang-btn:hover,
+    .lang-switcher.style-pill .lang-btn:hover,
+    .lang-switcher.style-flag .lang-btn:hover,
+    .lang-switcher.style-minimal .lang-btn:hover,
+    .lang-switcher.style-neon .lang-btn:hover,
+    .lang-switcher.style-capsule .lang-btn:hover {
+        transform: none;
+    }
+    
+    .lang-switcher.style-pill .lang-btn:hover .lang-flag-svg,
+    .lang-switcher.style-capsule .lang-btn:hover .lang-flag-svg {
+        transform: none;
+    }
+    
+    .lang-switcher.style-flag .lang-btn:hover .lang-flag-circle {
+        transform: none;
+    }
+}
+
+/* ========================================
+   Navigation Menu Pills - Matching Style
+   Updated to match language switcher aesthetic
+   ======================================== */
+.navbar-default .navbar-nav > .liquid-pill > a {
+    color: #fff;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    margin: 0 2px;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+/* Shine effect on hover - matches language switcher */
+.navbar-default .navbar-nav > .liquid-pill > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.navbar-default .navbar-nav > .liquid-pill > a:hover::before,
+.navbar-default .navbar-nav > .liquid-pill > a:focus::before {
+    left: 100%;
+}
+
+.navbar-default .navbar-nav > .liquid-pill > a:hover,
+.navbar-default .navbar-nav > .liquid-pill > a:focus,
+.navbar-default .navbar-nav > .liquid-pill > a:active {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+/* Active state for current section */
+.navbar-default .navbar-nav > .liquid-pill.active > a {
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Mobile navigation pills */
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > .liquid-pill > a {
+        margin: 5px 0;
+        text-align: center;
+        display: block;
+    }
+    
+    .navbar-default .navbar-nav > .liquid-pill > a:hover,
+    .navbar-default .navbar-nav > .liquid-pill > a:focus {
+        transform: none;
+    }
+}
+
+/* ========================================
+   Back to Top Button
+   Floating button with smooth scroll
+   ======================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.8);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.15) 100%);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transform: translateY(-3px) scale(1.05);
+    color: #fff;
+}
+
+.back-to-top:active {
+    transform: translateY(0) scale(0.95);
+}
+
+.back-to-top i {
+    transition: transform 0.3s ease;
+}
+
+.back-to-top:hover i {
+    transform: translateY(-3px);
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
